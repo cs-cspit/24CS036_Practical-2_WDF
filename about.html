@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - My College Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎓 My College Hub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="register.html">Join Us</a>
+    </nav>
+  </header>
+
+  <div class="color-switcher">
+    <button onclick="changeColors()">🌙 Dark Mode</button>
+  </div>
+
+  <div class="main-content">
+    <div class="about-section">
+      <h2>📖 About My Website</h2>
+      <p>Hi! This is a portal of college.</p>
+      
+      
+      <h3>🚀 Features  Added:</h3>
+      <div class="features-box">
+        <p>• Simple navigation menu</p>
+        <p>• Color changing button</p>
+        <p>• Student registration form</p>
+        <p>• Clean and easy design</p>
+      </div>
+      
+      <p><em>This is the about section.</em></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Portal !!</p>
+  </footer>
+
+  <script>
+    function changeColors() {
+      document.body.classList.toggle('black-theme');
+      const button = document.querySelector('.color-switcher button');
+      if (document.body.classList.contains('black-theme')) {
+        button.textContent = '☀️ Light Mode';
+      } else {
+        button.textContent = '🌙 Dark Mode';
+      }
+    }
+  </script>
+</body>
+</html>

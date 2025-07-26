@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Practical-2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1> My Portal</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="register.html">Join Us</a>
+    </nav>
+  </header>
+
+  <div class="color-switcher">
+    <button onclick="changeColors()">🌙 Dark Mode</button>
+  </div>
+
+  <div class="main-content">
+    <div class="welcome-box">
+      <h2> Welcome to Our College!</h2>
+      <p>This is a simple website where students can learn about our college and join our community. Perfect for beginners!</p>
+    </div>
+    
+    <div class="info-section">
+      <h3> What We Offer:</h3>
+      <ul>
+        <li>Easy registration process</li>
+        <li>Student-friendly environment</li>
+        <li>Simple and clean design</li>
+        <li>Mobile-friendly website</li>
+      </ul>
+    </div>
+    
+    <div class="quick-stats">
+      <h3> Quick Facts:</h3>
+      <p><strong>Students:</strong> 500+</p>
+      <p><strong>Courses:</strong> 25+</p>
+      <p><strong>Faculty:</strong> 50+</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Portal !!</p>
+  </footer>
+
+  <script>
+    function changeColors() {
+      document.body.classList.toggle('black-theme');
+      const button = document.querySelector('.color-switcher button');
+      if (document.body.classList.contains('black-theme')) {
+        button.textContent = '☀️ Light Mode';
+      } else {
+        button.textContent = '🌙 Dark Mode';
+      }
+    }
+  </script>
+</body>
+</html>

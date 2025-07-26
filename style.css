@@ -1,0 +1,264 @@
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.blue-theme {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.blue-theme header,
+.blue-theme footer {
+  background-color: #1976d2 !important;
+}
+
+.blue-theme .welcome-box,
+.blue-theme .info-section,
+.blue-theme .quick-stats,
+.blue-theme .about-section,
+.blue-theme .form-container {
+  background-color: #bbdefb;
+  border: 2px solid #1976d2;
+}
+
+/* Dark theme colors */
+.black-theme {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+.black-theme header,
+.black-theme footer {
+  background-color: #2c2c2c !important;
+}
+
+.black-theme .welcome-box,
+.black-theme .info-section,
+.black-theme .quick-stats,
+.black-theme .about-section,
+.black-theme .form-container {
+  background-color: #2d2d2d;
+  border: 2px solid #555;
+  color: #e0e0e0;
+}
+
+.black-theme .learning-list p,
+.black-theme .features-box p {
+  background-color: #3a3a3a !important;
+  border-left: 4px solid #666 !important;
+}
+
+.black-theme input,
+.black-theme textarea,
+.black-theme select {
+  background-color: #3a3a3a;
+  color: #e0e0e0;
+  border-color: #555;
+}
+
+.black-theme input:focus,
+.black-theme textarea:focus,
+.black-theme select:focus {
+  border-color: #888;
+}
+
+
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0 0 15px 0;
+  font-size: 2em;
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.2);
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+
+
+.color-switcher {
+  text-align: center;
+  margin: 20px;
+}
+
+.color-switcher button {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.color-switcher button:hover {
+  background-color: #f57c00;
+}
+
+
+.main-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.welcome-box,
+.info-section,
+.quick-stats,
+.about-section,
+.form-container {
+  background-color: white;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border: 2px solid #4caf50;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+
+.learning-list p,
+.features-box p {
+  background-color: #f8f9fa;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border-left: 4px solid #4caf50;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: #555;
+}
+
+input,
+textarea,
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+#thank-you-message {
+  text-align: center;
+  background-color: #d4edda;
+  color: #155724;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #c3e6cb;
+}
+
+footer {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  header h1 {
+    font-size: 1.5em;
+  }
+  
+  .main-content {
+    padding: 10px;
+  }
+  
+  .welcome-box,
+  .info-section,
+  .quick-stats,
+  .about-section,
+  .form-container {
+    margin: 10px 0;
+    padding: 15px;
+  }
+}

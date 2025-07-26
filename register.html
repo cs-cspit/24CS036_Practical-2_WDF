@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join Us - My College Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎓 My College Hub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="register.html">Join Us</a>
+    </nav>
+  </header>
+
+  <div class="color-switcher">
+    <button onclick="changeColors()">🌙 Dark Mode</button>
+  </div>
+
+  <div class="main-content">
+    <div class="form-container">
+      <h2>📝 Join Our College Community!</h2>
+      <p>Fill out this simple form to become part of our college family:</p>
+      
+      <form onsubmit="showThankYou()">
+        <label for="student-name"> Your Full Name:</label>
+        <input type="text" id="student-name" placeholder="Write your name here" required>
+
+        <label for="student-email"> Your Email Address:</label>
+        <input type="email" id="student-email" placeholder="your.email@example.com" required>
+        
+        <label for="student-age"> Your Age:</label>
+        <input type="number" id="student-age" placeholder="18" min="16" max="30" required>
+
+        <label for="course-interest"> Course You're Interested In:</label>
+        <select id="course-interest" required>
+          <option value="">Choose a course</option>
+          <option value="computer-science">Computer Science</option>
+          <option value="business">Business Studies</option>
+          <option value="arts">Arts & Literature</option>
+          <option value="science">Science</option>
+        </select>
+
+        <label for="why-join"> Why do you want to join our college?</label>
+        <textarea id="why-join" placeholder="Tell us in a few words..." rows="3"></textarea>
+
+        <button type="submit">🎉 Join Now!</button>
+      </form>
+      
+      <div id="thank-you-message" style="display: none;">
+        <h3>🎉 Thank You!</h3>
+        <p>Thanks for joining! We'll contact you soon.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Portal !!</p>
+  </footer>
+
+  <script>
+    function changeColors() {
+      document.body.classList.toggle('black-theme');
+      const button = document.querySelector('.color-switcher button');
+      if (document.body.classList.contains('black-theme')) {
+        button.textContent = '☀️ Light Mode';
+      } else {
+        button.textContent = '🌙 Dark Mode';
+      }
+    }
+    
+    function showThankYou() {
+      event.preventDefault();
+      document.querySelector('form').style.display = 'none';
+      document.getElementById('thank-you-message').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
